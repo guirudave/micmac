@@ -1,0 +1,169 @@
+<!--quick shop-->
+<div id="quick-shop-modal" class="grid-container">
+  <div class="quick-shop-container">
+    <div class="grid-55">
+      <div id="quick-shop-image" class="flexslider">
+        <ul class="slides">
+          <li data-thumb="./screen/products/product_01_1024x1024.jpg" class="flex-active-slide">
+            <a class="qs-fancybox">
+              <img src="screen/products/product_01_1024x1024.html" alt="">
+            </a>
+          </li>
+          <li data-thumb="screen/products/product_001_1024x1024.html">
+            <a class="qs-fancybox"><img src="screen/products/product_01_1024x1024.html" alt=""></a>
+          </li>
+        </ul>
+        <ol class="flex-control-nav flex-control-thumbs">
+          <li class="thumb-zoom active">
+            <img src="screen/products/product_01_small.html" data-src="./screen/products/product_01_1024x1024.jpg" alt="" class="flex-active">
+          </li>
+          <li class="thumb-zoom">
+            <img src="screen/products/product_001_small.html" data-src="./screen/products/product_001_1024x1024.jpg" alt="">
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="grid-45 product-information">
+      <div id="quick-shop-container">
+        <h2 id="quick-shop-title"><a href="product.html">Consectetur</a></h2>
+        <div class="sharing clearfix">
+          <ul class="unmargin unpadding">
+            <li class="unpadding">
+              <div id="fb-root"></div>
+              <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false"></div>          
+            </li>
+            <li class="unpadding">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+            </li>
+            <li class="unpadding">
+              <div class="g-plusone" data-size="medium" data-annotation="bubble" data-width="90"></div>
+            </li>
+            <li class="unpadding">
+              <a data-pin-do="buttonPin" data-pin-config="beside" href="http://pinterest.com/pin/create/button/?url=" class="pin-it-button" count-layout="horizontal"><img alt="" src="../../../assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+              <script type="text/javascript" src="../../../assets.pinterest.com/js/pinit.js"></script>
+            </li>
+          </ul>
+        </div>
+        <!-- fb like button -->
+        <div id="fb-root"></div>
+        <script type="text/javascript">
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "../../../connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- +1 button -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = '../../../apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        <!-- tweet btn -->
+        <script defer type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script>
+        <div id="quick-shop-infomation">
+          <div id="quick-shop-relative" class="relative align-left">
+            <ul>
+              <li class="vendor">
+                <span class="label">Vendor:</span><a href="collection.html"> Vendor 1</a>
+              </li>
+              <li class="type">
+                <span class="label">Type:</span><a href="collection.html"> Active Wear</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form action="http://demo.designshopify.com/html_activewear/ajax/product.html" method="post" class="variants" id="quick-shop-product-actions">
+          <div id="quick-shop-price-container">
+            <p class="detail-price">
+              <span class="price_sale"><span class="money">€50.00</span></span> 
+              <span class="price"> <del><span class="money">€55.00</span></del></span>
+            </p>
+          </div>
+          <div id="quick-shop-variants-container" class="variants-wrapper" style="display:none">
+            <div class="selector-wrapper clearfix">
+              <label for="#quick-shop-variants-147089259-option-0">Size</label>
+              <div class="wrapper">
+                <select class="single-option-selector span12" id="#quick-shop-variants-147089259-option-0">
+                  <option value="Small">Small</option>
+                  <option value="Large">Large</option>
+                </select><span class="custom-style-select-box" style="display:inline-block">
+                <span class="custom-style-select-box-inner">Small</span></span>
+              </div>
+            </div>
+            <div class="selector-wrapper clearfix">
+              <label for="#quick-shop-variants-147089259-option-1">Color</label>
+              <div class="wrapper">
+                <select class="single-option-selector span12" id="#quick-shop-variants-147089259-option-1">
+                  <option value="Red">Red</option>
+                  <option value="Blue">Blue</option>
+                </select><span class="custom-style-select-box" style="display:inline-block">
+                <span class="custom-style-select-box-inner">Red</span></span>
+              </div>
+            </div>
+            <select id="#quick-shop-variants-147089259" name="id" style="display:none">
+              <option value="335924819">Small / Red</option>
+              <option value="338157096">Large / Blue</option>
+            </select>
+          </div>
+          <div class="selector-wrapper clearfix">
+            <label>Quantity</label>
+            <span class="qty-group">
+              <input type="text" id="qs-quantity" class="item-quantity" name="quantity" value="1">
+              <span class="qty-up" data-src="#qs-quantity"><span></span></span>
+              <span class="qty-down" data-src="#qs-quantity"><span></span></span>
+            </span>
+          </div>
+          <input class="add-to-cart add-to-carts" type="submit" name="add" value="Add to Cart">
+          <div class="product-nav right">
+            <a id="quick-shop-link" class="button1" href="product.html">View full details</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    <h4 class="rtitle">Description</h4>
+    <div id="quick-shop-description" class="align-left"><h5>Paragraph text</h5>
+      <p>Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor auctor eget vitae arcu. Nam tempor malesuada porttitor. Nulla quis dignissim ipsum. Aliquam pulvinar iaculis justo, sit amet interdum sem hendrerit vitae. Vivamus vel erat tortor. Nulla facilisi. In nulla quam, lacinia eu aliquam ac, aliquam in nisl.</p>
+      <h5>Unordered list</h5>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Maecenas ullamcorper est et massa mattis condimentum.</li>
+        <li>Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.</li>
+        <li>Etiam nec massa et lectus faucibus ornare congue in nunc.</li>
+        <li>Mauris eget diam magna, in blandit turpis.</li>
+      </ul>
+      <h5>Ordered list</h5>
+      <ol>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Maecenas ullamcorper est et massa mattis condimentum.</li>
+        <li>Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.</li>
+        <li>Etiam nec massa et lectus faucibus ornare congue in nunc.</li>
+        <li>Mauris eget diam magna, in blandit turpis.</li>
+      </ol>
+      <p>In cursus faucibus tortor eu vestibulum. Ut eget turpis ac justo porta varius. Donec vel felis ante, ac vehicula ipsum. Quisque sed diam metus. Quisque eget leo sit amet erat varius rutrum vitae dapibus lectus. Vivamus et sapien ante. Suspendisse potenti. Fusce in tellus est, ac consequat lacus. Nulla risus massa, commodo in imperdiet ut, ornare in leo. Duis pellentesque sagittis lorem, sed mollis lorem venenatis id.</p></div>
+  </div>
+</div>
+<script>
+  jQuery(document).ready(function($) {
+    $('.quick-shop-container').on(clickEv, '.thumb-zoom', function() {
+      
+      var $this = $(this);
+      var parent = $this.parents('#quick-shop-image');
+      var child = $this.find('img');
+      var src_display = child.attr('data-src');
+      
+      parent.find('.thumb-zoom').removeClass('active');
+      $this.addClass('active');
+      
+      parent.find('.qs-fancybox').find('img').attr('src', src_display);
+      
+      return false;
+    });
+  });
+</script>
